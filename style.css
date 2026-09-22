@@ -17,3 +17,7 @@ h1 {
     background-color: #222;
     color: white;
 }
+
+.dark h1 {
+    color: white;
+}

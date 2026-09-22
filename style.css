@@ -26,3 +26,13 @@ h1 {
     font-size: 30px;
     font-weight: bold;
 }
+
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}

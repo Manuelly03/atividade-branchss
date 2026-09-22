@@ -41,3 +41,20 @@ function atualizarRelogio() {
 setInterval(atualizarRelogio, 1000);
 
 atualizarRelogio();
+
+function adicionarTarefa() {
+    const campo = document.getElementById("tarefa");
+    const lista = document.getElementById("lista");
+
+    if (campo.value === "") {
+        return;
+    }
+
+    const item = document.createElement("li");
+
+    item.textContent = campo.value;
+
+    lista.appendChild(item);
+
+    campo.value = "";
+}

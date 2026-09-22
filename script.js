@@ -79,3 +79,16 @@ function adicionarTarefa() {
 
     campo.value = "";
 }
+
+function enviarFormulario() {
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const mensagem = document.getElementById("mensagem");
+
+    if (nome === "" || email === "") {
+        mensagem.textContent = "Preencha todos os campos.";
+        return;
+    }
+
+    mensagem.textContent = "Formulário enviado com sucesso!";
+}

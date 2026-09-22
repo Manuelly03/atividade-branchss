@@ -10,3 +10,7 @@ function diminuir() {
     numero--;
     document.getElementById("contador").textContent = numero;
 }
+
+function alternarTema() {
+    document.body.classList.toggle("dark");
+}

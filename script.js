@@ -58,3 +58,24 @@ function adicionarTarefa() {
 
     campo.value = "";
 }
+
+function adicionarTarefa() {
+    const campo = document.getElementById("tarefa");
+    const lista = document.getElementById("lista");
+
+    if (campo.value === "") {
+        return;
+    }
+
+    const item = document.createElement("li");
+
+    item.textContent = campo.value;
+
+    item.onclick = function() {
+        item.remove();
+    };
+
+    lista.appendChild(item);
+
+    campo.value = "";
+}
